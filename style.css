@@ -1,36 +1,107 @@
  body {
     background-color: #F4D04E;
-    align-items: center;
     display: flex;
-    text-align: left;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440;
+   
  }
+
  .card {
-    position: absolute;
-    top:    50%;
-    left:   50%;
-    transform: translate(-50%,-50%);
-    align-self: center;
     background-color: aliceblue;
     width:384px;
     height: 522px;
     border-radius: 20px;
-    box-shadow: black;
-
+    padding: 24px;
+    box-shadow: 8px 8px 0px #000;
+    border: 1px solid #000;
 }
- 
+#card {  
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    
+}
+
+ /* FONTES */
+
+  @font-face {
+        font-family: 'feb';
+        src: url('fonts/feb.ttf') format('truetype');
+        font-weight: 800px;
+        font-style: normal;
+    }
  @font-face {
-        font-family: "Figtree ExtraBold";
-        src: url(Figtree-ExtraBold.ttf)
-    }
-    .h1 {
-        font-family: Figtree ExtraBold;
-    }
+    font-family:'feb-medio' ;
+    src: url('fonts/feb-medio.ttf');
+}
+@font-face {
+    font-family: 'feb-light';
+    src: url('fonts/feb-light.ttf');   
+}
+
+
+@font-face {
+    font-family: 'fig-italico';
+    src: url(fonts/fig-italico.ttf);    
+}
+
     #learn {
-        position: absolute;
+        font-family: feb;
+        font-size: 14px;
         background-color: #F4D04E;
-        padding: 6px 6px;
-        border-radius: 5px; 
-        gap: 40px;  
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 5px;
+        font-weight: bold;
+
     }
+
+
+    h1 {
+        font-family: feb;
+        font-size: 24px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color: #000;
+    }
+    #pub {
+        font-family:'feb-light';
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    #texto {
+        font-family: 'fig-italico';
+        font-weight: 100;  
+        font-size: 16px; 
+        line-height: 1.5;
+        color: #444;    
+    }
+
+    .attribution {
+        font-family: 'feb-light';
+    }
+
+    #greg {
+        width:  40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .greg {
+        font-family: feb;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .autor {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
     
